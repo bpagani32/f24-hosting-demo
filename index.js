@@ -4,4 +4,4 @@ const message = () => {
     alert('Whatever ya say boomer!!!')
 }
 
-bigButton.addEventListener('click', bigButton)
+bigButton.addEventListener('click', message)
