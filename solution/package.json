@@ -1,7 +1,6 @@
 {
   "name": "deployment-demo",
   "version": "1.0.0",
-  "description": "",
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
@@ -14,8 +13,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "YOUR-GITHUB-URL",
+  "homepage": "http://YOUR-GITHUB-URL",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.18.1"
+  },
+  "description": ""
 }
