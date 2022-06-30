@@ -27,10 +27,8 @@ var rollbar = new Rollbar({
   captureUnhandledRejections: true
 });
 
-try {blah()} 
-catch{bad} rollbar.critical(err)
+rollbar.log("WTF IS THIS SHIT MAN")
 
-// const students = ['Jimmy', 'Timothy', 'Jimothy']
 
 
     rollbar.info('Students List Requested')
@@ -39,7 +37,10 @@ catch{bad} rollbar.critical(err)
     rollbar.warning('jk')
     res.status(200).send(students)
 
-
+try {blah()}
+catch (error) {
+    rollbar.error(error)
+}
 
 // record a generic message and send it to Rollbar
 rollbar.log("Hello world!");
