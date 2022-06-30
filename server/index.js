@@ -29,11 +29,9 @@ var rollbar = new Rollbar({
 
 try {blah()} 
 catch{bad} rollbar.critical(err)
-const students = ['Jimmy', 'Timothy', 'Jimothy']
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'))
-})
+// const students = ['Jimmy', 'Timothy', 'Jimothy']
+
 
     rollbar.info('Students List Requested')
     rollbar.error('stuff is going wrong')
